@@ -1,0 +1,34 @@
+﻿<Window x:Class="ServerAsync.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ServerAsync"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Image Margin="20" Height="250" x:Name="imgSection"></Image>
+            <Button x:Name="btnListen" Margin="10 0 10 0" Width="180" FontSize="15" VerticalAlignment="Center" Height="25">Listen</Button>
+            <Button x:Name="btnClose"
+                    Margin="10"
+                    Width="180"
+                    FontSize="15"
+                    VerticalAlignment="Center"
+                    Height="25">Close</Button>
+
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <TextBlock x:Name="txtCLientConneted" Margin="20"></TextBlock>
+            <RichTextBox x:Name="txtMessage" Margin="20" Height="270">
+                
+            </RichTextBox>
+        </StackPanel>
+
+    </Grid>
+</Window>
